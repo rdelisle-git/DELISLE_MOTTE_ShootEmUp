@@ -7,6 +7,9 @@ public class MenuManager : MonoBehaviour
 {
     [SerializeField]
     Button playButton;
+    [SerializeField]
+    Text highScore;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,12 +19,11 @@ public class MenuManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        highScore.text = PlayerPrefs.GetFloat("HighScore").ToString();
     }
 
     public void Play()
     {
-        Debug.Log("bite");
         SceneManager.LoadScene("game");
     }
 }

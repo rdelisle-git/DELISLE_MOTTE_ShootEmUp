@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 7937293052336399048}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -45.957165, y: -8.796941, z: -1.216048}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.02}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -51,7 +51,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7937293052336399048}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
@@ -61,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 3856ff7d62cbc744cae2e7e5105206f3, type: 2}
+  - {fileID: 2100000, guid: e0d080325ddcc4a4fb6870b37bc259d7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -110,6 +110,8 @@ MonoBehaviour:
   m_maxHP: 0
   m_actualHP: 0
   m_ennemySpeed: 0
+  Bullet: {fileID: 3854691074353733151, guid: a4670fbf66fc0894581b0c28dcee516d, type: 3}
+  m_respawnDelay: 0
 --- !u!54 &-650936736745452528
 Rigidbody:
   m_ObjectHideFlags: 0

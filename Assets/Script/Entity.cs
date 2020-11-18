@@ -27,6 +27,10 @@ public class Entity : MonoBehaviour
     public int gestionHP(int actualHP)
     {
         actualHP = actualHP - 1;
+        if(actualHP == 0)
+        {
+            Destroy(gameObject);
+        }
         return actualHP;
     }
 }
